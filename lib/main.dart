@@ -1,24 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
-import 'input_widgets_page.dart';
-import 'date_picker_page.dart';
-import 'checkbox_page.dart';
-import 'switch_page.dart';
-import 'dropdown_page.dart';
-import 'radio_page.dart';
-import 'slider_page.dart';
-import 'progress_indicator_page.dart';
-import 'button_page.dart';
-import 'tooltip_page.dart';
-import 'image_page.dart';
-import 'list_view_page.dart';
-import 'grid_view_page.dart';
-import 'stepper_page.dart';
-import 'alert_dialog_page.dart';
-import 'expansion_tile_page.dart';
-import 'chip_page.dart';
-import 'divider_page.dart';
-import 'snackbar_page.dart';
+import 'package:flutter_testing_app/widgets.dart';
 
 void main() => runApp(MyApp());
 
@@ -43,27 +24,36 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-  static List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
-    InputWidgetsPage(),
-    DatePickerPage(),
-    CheckboxPage(),
-    SwitchPage(),
-    DropdownPage(),
-    RadioPage(),
-    SliderPage(),
-    ProgressIndicatorPage(),
-    ButtonPage(),
-    TooltipPage(),
-    ImagePage(),
-    ListViewPage(),
-    GridViewPage(),
-    StepperPage(),
-    AlertDialogPage(),
-    ExpansionTilePage(),
-    ChipPage(),
-    DividerPage(),
-    SnackbarPage(),
+  static final List<Widget> _widgetOptions = <Widget>[
+    const HomePage(),
+    const InputWidgetsPage(),
+    const DatePickerPage(),
+    const CheckboxPage(),
+    const SwitchPage(),
+    const DropdownPage(),
+    const RadioPage(),
+    const SliderPage(),
+    const ProgressIndicatorPage(),
+    const ButtonPage(),
+    const TooltipPage(),
+    const ImagePage(),
+    const ListViewPage(),
+    const GridViewPage(),
+    const StepperPage(),
+    const AlertDialogPage(),
+    const ExpansionTilePage(),
+    const ChipPage(),
+    const DividerPage(),
+    const SnackbarPage(),
+    const TabsPage(),
+    const AnimatedContainerPage(),
+    const DraggablePage(),
+    const TablePage(),
+    const FormPage(),
+    const DrawerPage(),
+    const BottomSheetPage(),
+    const GestureDetectorPage(),
+    const ReorderableListViewPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -76,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Testing App'),
+        title: const Text('Flutter Testing App'),
       ),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
@@ -160,6 +150,42 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.message),
             label: 'Snackbar',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.tab),
+            label: 'Tabs',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.animation),
+            label: 'Animated Container',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.drag_handle),
+            label: 'Draggable',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.table_chart),
+            label: 'Table',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.format_list_bulleted),
+            label: 'Form',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.menu),
+            label: 'Drawer',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.arrow_upward),
+            label: 'Bottom Sheet',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.gesture),
+            label: 'Gesture Detector',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.reorder),
+            label: 'Reorderable List',
           ),
         ],
         currentIndex: _selectedIndex,
