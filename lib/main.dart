@@ -9,6 +9,11 @@ import 'radio_page.dart';
 import 'slider_page.dart';
 import 'progress_indicator_page.dart';
 import 'button_page.dart';
+import 'tooltip_page.dart';
+import 'image_page.dart';
+import 'list_view_page.dart';
+import 'grid_view_page.dart';
+import 'stepper_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -44,6 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
     SliderPage(),
     ProgressIndicatorPage(),
     ButtonPage(),
+    TooltipPage(),
+    ImagePage(),
+    ListViewPage(),
+    GridViewPage(),
+    StepperPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -100,6 +110,26 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.touch_app),
             label: 'Buttons',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            label: 'Tooltip',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.image),
+            label: 'Image',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.list),
+            label: 'List View',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.grid_on),
+            label: 'Grid View',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.linear_scale),
+            label: 'Stepper',
           ),
         ],
         currentIndex: _selectedIndex,
