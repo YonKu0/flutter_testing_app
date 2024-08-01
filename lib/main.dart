@@ -14,6 +14,11 @@ import 'image_page.dart';
 import 'list_view_page.dart';
 import 'grid_view_page.dart';
 import 'stepper_page.dart';
+import 'alert_dialog_page.dart';
+import 'expansion_tile_page.dart';
+import 'chip_page.dart';
+import 'divider_page.dart';
+import 'snackbar_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -54,6 +59,11 @@ class _MyHomePageState extends State<MyHomePage> {
     ListViewPage(),
     GridViewPage(),
     StepperPage(),
+    AlertDialogPage(),
+    ExpansionTilePage(),
+    ChipPage(),
+    DividerPage(),
+    SnackbarPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -130,6 +140,26 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.linear_scale),
             label: 'Stepper',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.warning),
+            label: 'Alert Dialog',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.expand_more),
+            label: 'Expansion Tile',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.label),
+            label: 'Chip',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.horizontal_rule),
+            label: 'Divider',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message),
+            label: 'Snackbar',
           ),
         ],
         currentIndex: _selectedIndex,
