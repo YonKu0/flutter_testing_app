@@ -3,6 +3,12 @@ import 'home_page.dart';
 import 'input_widgets_page.dart';
 import 'date_picker_page.dart';
 import 'checkbox_page.dart';
+import 'switch_page.dart';
+import 'dropdown_page.dart';
+import 'radio_page.dart';
+import 'slider_page.dart';
+import 'progress_indicator_page.dart';
+import 'button_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,14 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -29,11 +33,17 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-  static final List<Widget> _widgetOptions = <Widget>[
-    const HomePage(),
-    const InputWidgetsPage(),
-    const DatePickerPage(),
-    const CheckboxPage(),
+  static List<Widget> _widgetOptions = <Widget>[
+    HomePage(),
+    InputWidgetsPage(),
+    DatePickerPage(),
+    CheckboxPage(),
+    SwitchPage(),
+    DropdownPage(),
+    RadioPage(),
+    SliderPage(),
+    ProgressIndicatorPage(),
+    ButtonPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -46,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter Testing App'),
+        title: Text('Flutter Testing App'),
       ),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
@@ -66,6 +76,30 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.check_box),
             label: 'Checkbox',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.toggle_on),
+            label: 'Switch',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.arrow_drop_down_circle),
+            label: 'Dropdown',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.radio_button_checked),
+            label: 'Radio',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.linear_scale),
+            label: 'Slider',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.hourglass_empty),
+            label: 'Progress',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.touch_app),
+            label: 'Buttons',
           ),
         ],
         currentIndex: _selectedIndex,
