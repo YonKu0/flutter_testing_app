@@ -11,11 +11,16 @@ class IndicatorsPage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: ListView(
-          children: <Widget>[
-            CircularProgressIndicatorWidget(),
-            LinearProgressIndicatorWidget(),
-          ],
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              CircularProgressIndicatorWidget(),
+              SizedBox(height: 20),
+              LinearProgressIndicatorWidget(),
+            ],
+          ),
         ),
       ),
     );

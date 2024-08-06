@@ -15,20 +15,23 @@ class LayoutsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Layouts'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: ListView(
-          children: <Widget>[
-            ContainerWidget(),
-            RowWidget(),
-            ColumnWidget(),
-            StackWidget(),
-            GridViewWidget(),
-            ListViewWidget(),
-            TableWidget(),
-            ExpansionTileWidget(),
-          ],
-        ),
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverList(
+            delegate: SliverChildListDelegate(
+              <Widget>[
+                ContainerWidget(),
+                RowWidget(),
+                ColumnWidget(),
+                StackWidget(),
+                GridViewWidget(),
+                ListViewWidget(),
+                TableWidget(),
+                ExpansionTileWidget(),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

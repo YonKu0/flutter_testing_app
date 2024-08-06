@@ -11,14 +11,48 @@ class NavigationPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Navigation'),
       ),
+      drawer: DrawerWidget(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: <Widget>[
-            DrawerWidget(),
-            AppBarWidget(),
-            BottomNavigationBarWidget(),
-            TabsWidget(),
+            ListTile(
+              title: Text('Drawer Widget'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DrawerWidget()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('App Bar Widget'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AppBarWidget()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Bottom Navigation Bar Widget'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => BottomNavigationBarWidget()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Tabs Widget'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TabsWidget()),
+                );
+              },
+            ),
           ],
         ),
       ),

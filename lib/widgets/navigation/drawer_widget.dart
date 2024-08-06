@@ -6,6 +6,8 @@ class DrawerWidget extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
+        shrinkWrap: true,
+        physics: NeverScrollableScrollPhysics(),
         children: <Widget>[
           DrawerHeader(
             child: Text('Drawer Header'),
