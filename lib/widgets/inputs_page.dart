@@ -8,23 +8,25 @@ import 'inputs/slider_widget.dart';
 import 'inputs/dropdown_button_widget.dart';
 
 class InputsPage extends StatelessWidget {
+  const InputsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Inputs'),
+        title: const Text('Inputs'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: <Widget>[
-            TextFieldWidget(),
+            const TextFieldWidget(),
             FormWidget(),
-            CheckboxWidget(),
-            RadioWidget(),
-            SwitchWidget(),
-            SliderWidget(),
-            DropdownButtonWidget(),
+            const CheckboxWidget(),
+            const RadioWidget(),
+            const SwitchWidget(),
+            const SliderWidget(),
+            const DropdownButtonWidget(),
           ],
         ),
       ),

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class TableWidget extends StatelessWidget {
+  const TableWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Table(
-      children: [
+      children: const [
         TableRow(
           children: [
             Text('Cell 1'),

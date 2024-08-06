@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AlertDialogWidget extends StatelessWidget {
+  const AlertDialogWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -9,21 +11,21 @@ class AlertDialogWidget extends StatelessWidget {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              title: Text('Alert'),
-              content: Text('This is an alert dialog.'),
+              title: const Text('Alert'),
+              content: const Text('This is an alert dialog.'),
               actions: <Widget>[
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text('OK'),
+                  child: const Text('OK'),
                 ),
               ],
             );
           },
         );
       },
-      child: Text('Show Alert Dialog'),
+      child: const Text('Show Alert Dialog'),
     );
   }
 }

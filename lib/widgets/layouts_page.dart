@@ -9,25 +9,27 @@ import 'layouts/table_widget.dart';
 import 'layouts/expansion_tile_widget.dart';
 
 class LayoutsPage extends StatelessWidget {
+  const LayoutsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Layouts'),
+        title: const Text('Layouts'),
       ),
       body: CustomScrollView(
         slivers: <Widget>[
           SliverList(
             delegate: SliverChildListDelegate(
               <Widget>[
-                ContainerWidget(),
-                RowWidget(),
-                ColumnWidget(),
-                StackWidget(),
-                GridViewWidget(),
-                ListViewWidget(),
-                TableWidget(),
-                ExpansionTileWidget(),
+                const ContainerWidget(),
+                const RowWidget(),
+                const ColumnWidget(),
+                const StackWidget(),
+                const GridViewWidget(),
+                const ListViewWidget(),
+                const TableWidget(),
+                const ExpansionTileWidget(),
               ],
             ),
           ),

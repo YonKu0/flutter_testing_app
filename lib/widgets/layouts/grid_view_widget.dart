@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class GridViewWidget extends StatelessWidget {
+  const GridViewWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -10,25 +12,25 @@ class GridViewWidget extends StatelessWidget {
         children: <Widget>[
           Container(
             color: Colors.blue,
-            child: Center(
+            child: const Center(
               child: Text('Item 1'),
             ),
           ),
           Container(
             color: Colors.red,
-            child: Center(
+            child: const Center(
               child: Text('Item 2'),
             ),
           ),
           Container(
             color: Colors.green,
-            child: Center(
+            child: const Center(
               child: Text('Item 3'),
             ),
           ),
           Container(
             color: Colors.yellow,
-            child: Center(
+            child: const Center(
               child: Text('Item 4'),
             ),
           ),

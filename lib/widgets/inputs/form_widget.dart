@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class FormWidget extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
+  FormWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -10,7 +12,7 @@ class FormWidget extends StatelessWidget {
       child: Column(
         children: <Widget>[
           TextFormField(
-            decoration: InputDecoration(labelText: 'Enter your name'),
+            decoration: const InputDecoration(labelText: 'Enter your name'),
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter some text';
@@ -24,7 +26,7 @@ class FormWidget extends StatelessWidget {
                 // Process data.
               }
             },
-            child: Text('Submit'),
+            child: const Text('Submit'),
           ),
         ],
       ),

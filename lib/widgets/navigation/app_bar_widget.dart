@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AppBarWidget extends StatelessWidget {
+  const AppBarWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('App Bar'),
+        title: const Text('App Bar'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('App Bar Content'),
       ),
     );

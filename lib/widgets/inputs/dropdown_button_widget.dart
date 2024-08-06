@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class DropdownButtonWidget extends StatefulWidget {
+  const DropdownButtonWidget({super.key});
+
   @override
-  _DropdownButtonWidgetState createState() => _DropdownButtonWidgetState();
+  DropdownButtonWidgetState createState() => DropdownButtonWidgetState();
 }
 
-class _DropdownButtonWidgetState extends State<DropdownButtonWidget> {
+class DropdownButtonWidgetState extends State<DropdownButtonWidget> {
   String dropdownValue = 'One';
 
   @override

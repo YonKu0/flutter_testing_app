@@ -1,26 +1,28 @@
 import 'package:flutter/material.dart';
 
 class DrawerWidget extends StatelessWidget {
+  const DrawerWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         children: <Widget>[
-          DrawerHeader(
-            child: Text('Drawer Header'),
+          const DrawerHeader(
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
+            child: Text('Drawer Header'),
           ),
           ListTile(
-            title: Text('Item 1'),
+            title: const Text('Item 1'),
             onTap: () {},
           ),
           ListTile(
-            title: Text('Item 2'),
+            title: const Text('Item 2'),
             onTap: () {},
           ),
         ],

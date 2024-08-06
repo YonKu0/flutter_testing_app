@@ -5,51 +5,53 @@ import 'navigation/bottom_navigation_bar_widget.dart';
 import 'navigation/tabs_widget.dart';
 
 class NavigationPage extends StatelessWidget {
+  const NavigationPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigation'),
+        title: const Text('Navigation'),
       ),
-      drawer: DrawerWidget(),
+      drawer: const DrawerWidget(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: <Widget>[
             ListTile(
-              title: Text('Drawer Widget'),
+              title: const Text('Drawer Widget'),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => DrawerWidget()),
+                  MaterialPageRoute(builder: (context) => const DrawerWidget()),
                 );
               },
             ),
             ListTile(
-              title: Text('App Bar Widget'),
+              title: const Text('App Bar Widget'),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AppBarWidget()),
+                  MaterialPageRoute(builder: (context) => const AppBarWidget()),
                 );
               },
             ),
             ListTile(
-              title: Text('Bottom Navigation Bar Widget'),
+              title: const Text('Bottom Navigation Bar Widget'),
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => BottomNavigationBarWidget()),
+                      builder: (context) => const BottomNavigationBarWidget()),
                 );
               },
             ),
             ListTile(
-              title: Text('Tabs Widget'),
+              title: const Text('Tabs Widget'),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => TabsWidget()),
+                  MaterialPageRoute(builder: (context) => const TabsWidget()),
                 );
               },
             ),

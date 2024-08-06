@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class StepperWidget extends StatefulWidget {
+  const StepperWidget({super.key});
+
   @override
-  _StepperWidgetState createState() => _StepperWidgetState();
+  StepperWidgetState createState() => StepperWidgetState();
 }
 
-class _StepperWidgetState extends State<StepperWidget> {
+class StepperWidgetState extends State<StepperWidget> {
   int _currentStep = 0;
 
   @override
@@ -33,18 +35,18 @@ class _StepperWidgetState extends State<StepperWidget> {
       },
       steps: <Step>[
         Step(
-          title: Text('Step 1'),
-          content: Text('Content for Step 1'),
+          title: const Text('Step 1'),
+          content: const Text('Content for Step 1'),
           isActive: _currentStep >= 0,
         ),
         Step(
-          title: Text('Step 2'),
-          content: Text('Content for Step 2'),
+          title: const Text('Step 2'),
+          content: const Text('Content for Step 2'),
           isActive: _currentStep >= 1,
         ),
         Step(
-          title: Text('Step 3'),
-          content: Text('Content for Step 3'),
+          title: const Text('Step 3'),
+          content: const Text('Content for Step 3'),
           isActive: _currentStep >= 2,
         ),
       ],

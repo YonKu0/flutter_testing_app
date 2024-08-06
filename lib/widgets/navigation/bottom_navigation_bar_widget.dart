@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
+  const BottomNavigationBarWidget({super.key});
+
   @override
-  _BottomNavigationBarWidgetState createState() =>
-      _BottomNavigationBarWidgetState();
+  BottomNavigationBarWidgetState createState() =>
+      BottomNavigationBarWidgetState();
 }
 
-class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
+class BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[

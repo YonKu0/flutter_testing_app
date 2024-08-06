@@ -6,16 +6,18 @@ import 'buttons/icon_button_widget.dart';
 import 'buttons/floating_action_button_widget.dart';
 
 class ButtonsPage extends StatelessWidget {
+  const ButtonsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Buttons'),
+        title: const Text('Buttons'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
-          children: <Widget>[
+          children: const <Widget>[
             ElevatedButtonWidget(),
             TextButtonWidget(),
             OutlinedButtonWidget(),
