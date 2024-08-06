@@ -30,7 +30,7 @@ class DrawerPage extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Swipe from the left to see the drawer.'),
       ),
     );

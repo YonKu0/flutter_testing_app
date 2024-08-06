@@ -12,14 +12,6 @@ class DraggablePage extends StatelessWidget {
       body: Center(
         child: Draggable(
           data: 'Flutter',
-          child: Container(
-            width: 100,
-            height: 100,
-            color: Colors.blue,
-            child: const Center(
-              child: Text('Drag me', style: TextStyle(color: Colors.white)),
-            ),
-          ),
           feedback: Container(
             width: 100,
             height: 100,
@@ -32,6 +24,14 @@ class DraggablePage extends StatelessWidget {
             width: 100,
             height: 100,
             color: Colors.red,
+            child: const Center(
+              child: Text('Drag me', style: TextStyle(color: Colors.white)),
+            ),
+          ),
+          child: Container(
+            width: 100,
+            height: 100,
+            color: Colors.blue,
             child: const Center(
               child: Text('Drag me', style: TextStyle(color: Colors.white)),
             ),

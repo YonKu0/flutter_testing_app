@@ -9,20 +9,20 @@ class ChipPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Chip'),
       ),
-      body: Center(
+      body: const Center(
         child: Wrap(
           spacing: 8.0,
           runSpacing: 4.0,
           children: <Widget>[
-            const Chip(
+            Chip(
               label: Text('Chip 1'),
               key: Key('chip1'),
             ),
-            const Chip(
+            Chip(
               label: Text('Chip 2'),
               key: Key('chip2'),
             ),
-            const Chip(
+            Chip(
               label: Text('Chip 3'),
               key: Key('chip3'),
             ),

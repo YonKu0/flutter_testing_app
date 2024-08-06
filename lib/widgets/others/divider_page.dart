@@ -10,22 +10,22 @@ class DividerPage extends StatelessWidget {
         title: const Text('Divider'),
       ),
       body: ListView(
-        children: <Widget>[
-          const ListTile(
+        children: const <Widget>[
+          ListTile(
             title: Text('Item 1'),
             key: Key('listItem1'),
           ),
-          const Divider(),
-          const ListTile(
+          Divider(),
+          ListTile(
             title: Text('Item 2'),
             key: Key('listItem2'),
           ),
-          const Divider(),
-          const ListTile(
+          Divider(),
+          ListTile(
             title: Text('Item 3'),
             key: Key('listItem3'),
           ),
-          const Divider(),
+          Divider(),
         ],
       ),
     );

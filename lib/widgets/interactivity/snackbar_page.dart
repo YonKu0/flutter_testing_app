@@ -23,8 +23,8 @@ class SnackbarPage extends StatelessWidget {
 
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
           },
-          child: const Text('Show Snackbar'),
           key: const Key('showSnackBarButton'),
+          child: const Text('Show Snackbar'),
         ),
       ),
     );

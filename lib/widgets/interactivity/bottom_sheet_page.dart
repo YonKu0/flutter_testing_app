@@ -38,8 +38,8 @@ class BottomSheetPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () => _showModalBottomSheet(context),
-          child: const Text('Show Bottom Sheet'),
           key: const Key('showBottomSheetButton'),
+          child: const Text('Show Bottom Sheet'),
         ),
       ),
     );

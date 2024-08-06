@@ -29,18 +29,18 @@ class _StepperPageState extends State<StepperPage> {
             setState(() => _currentStep -= 1);
           }
         },
-        steps: [
+        steps: const [
           Step(
-            title: const Text('Step 1'),
-            content: const Text('This is the first step.'),
+            title: Text('Step 1'),
+            content: Text('This is the first step.'),
           ),
           Step(
-            title: const Text('Step 2'),
-            content: const Text('This is the second step.'),
+            title: Text('Step 2'),
+            content: Text('This is the second step.'),
           ),
           Step(
-            title: const Text('Step 3'),
-            content: const Text('This is the third step.'),
+            title: Text('Step 3'),
+            content: Text('This is the third step.'),
           ),
         ],
         key: const Key('stepper'),
