@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'dialogs/alert_dialog_widget.dart';
-import 'dialogs/simple_dialog_widget.dart';
-import 'dialogs/bottom_sheet_widget.dart';
+import '../widgets/dialogs/alert_dialog_widget.dart';
+import '../widgets/dialogs/simple_dialog_widget.dart';
+import '../widgets/dialogs/bottom_sheet_widget.dart';
 
 class DialogsPage extends StatelessWidget {
   const DialogsPage({super.key});

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'misc/tooltip_widget.dart';
-import 'misc/snackbar_widget.dart';
-import 'misc/chip_widget.dart';
-import 'misc/divider_widget.dart';
-import 'misc/card_widget.dart';
-import 'misc/data_table_widget.dart';
-import 'misc/stepper_widget.dart';
+import '../widgets/misc/tooltip_widget.dart';
+import '../widgets/misc/snackbar_widget.dart';
+import '../widgets/misc/chip_widget.dart';
+import '../widgets/misc/divider_widget.dart';
+import '../widgets/misc/card_widget.dart';
+import '../widgets/misc/data_table_widget.dart';
+import '../widgets/misc/stepper_widget.dart';
 
 class MiscPage extends StatelessWidget {
   const MiscPage({super.key});

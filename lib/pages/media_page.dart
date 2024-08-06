@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'media/image_widget.dart';
-import 'media/icon_widget.dart';
+import '../widgets/media/image_widget.dart';
+import '../widgets/media/icon_widget.dart';
 
 class MediaPage extends StatelessWidget {
   const MediaPage({super.key});

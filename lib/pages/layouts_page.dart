@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'layouts/container_widget.dart';
-import 'layouts/row_widget.dart';
-import 'layouts/column_widget.dart';
-import 'layouts/stack_widget.dart';
-import 'layouts/grid_view_widget.dart';
-import 'layouts/list_view_widget.dart';
-import 'layouts/table_widget.dart';
-import 'layouts/expansion_tile_widget.dart';
+import '../widgets/layouts/container_widget.dart';
+import '../widgets/layouts/row_widget.dart';
+import '../widgets/layouts/column_widget.dart';
+import '../widgets/layouts/stack_widget.dart';
+import '../widgets/layouts/grid_view_widget.dart';
+import '../widgets/layouts/list_view_widget.dart';
+import '../widgets/layouts/table_widget.dart';
+import '../widgets/layouts/expansion_tile_widget.dart';
 
 class LayoutsPage extends StatelessWidget {
   const LayoutsPage({super.key});

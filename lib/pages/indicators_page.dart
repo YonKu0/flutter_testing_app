@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'indicators/circular_progress_indicator_widget.dart';
-import 'indicators/linear_progress_indicator_widget.dart';
+import '../widgets/indicators/circular_progress_indicator_widget.dart';
+import '../widgets/indicators/linear_progress_indicator_widget.dart';
 
 class IndicatorsPage extends StatelessWidget {
   const IndicatorsPage({super.key});
